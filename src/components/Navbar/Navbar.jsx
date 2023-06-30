@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { auth } from '../../firebase';
 import { signOut } from "firebase/auth"
 import "./Navbar.css";
-import logoImg from "../../images/logo.png";
+import logoImg from "../../images/books.png";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className='brand-and-toggler flex flex-sb'>
           <Link to="/" className='navbar-brand flex'>
             <img src={logoImg} alt="site logo" />
-            <span className='text-uppercase fw-7 fs-24 ls-1'>bookhub</span>
+            <span className='text-uppercase fw-7 fs-24 ls-1 w-50'>BookShelf</span>
           </Link>
           <button type="button" className='navbar-toggler-btn' onClick={handleNavbar}>
             <HiOutlineMenuAlt3 size={35} style={{
@@ -42,7 +42,7 @@ const Navbar = () => {
                 <li style={{ margin: '0 15px' }} classNam="" ><button onClick={() => { signOut(auth); window.location.reload() }}>Sign out</button></li>
               </div>
               :
-              <div>
+              <div className='abcd flex'>
                 <li className='nav-item'>
                   <Link to="login" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>Login</Link>
                 </li>

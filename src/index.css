@@ -6,6 +6,7 @@
   --white-color: #fff;
   --black-color: #010101;;
   --light-black-color: #717171;
+  --yellow-color: #fdbd40;
   --transition: all 300ms ease-in-out;
 }
 
@@ -61,6 +62,7 @@ input{
 
 /* text */
 .text-black{color: var(--black-color);}
+.text-cyan{color: #238892}
 .text-white{color: var(--white-color);}
 .text-purple{color: var(--purple-color);}
 .text-light-black{color: var(--light-black-color);}

@@ -9,7 +9,7 @@ const Header = () => {
       <header className='header'>
         <Navbar />
         <div className='header-content flex flex-c text-center text-white'>
-          <h2 className='header-title text-capitalize'>find your book of choice.</h2><br />
+          <h2 className='header-title text-capitalize'>Get your book of choice.</h2><br />
           <SearchForm />
         </div>
       </header>

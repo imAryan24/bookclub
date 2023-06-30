@@ -5,7 +5,7 @@ const AUTHOR_URL = "https://openlibrary.org/search/authors.json?q=";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-    const [searchTerm, setSearchTerm] = useState("the lost world");
+    const [searchTerm, setSearchTerm] = useState("Ikigai");
     const [books, setBooks] = useState([]);
     const [authors, setAuthors] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -41,7 +41,7 @@ const AppProvider = ({ children }) => {
                 setBooks(newBooks);
 
                 if (newBooks.length > 1) {
-                    setResultTitle("Your Search Result");
+                    setResultTitle("Your Results");
                 } else {
                     setResultTitle("No Search Result Found!")
                 }
