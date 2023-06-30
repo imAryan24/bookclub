@@ -31,6 +31,10 @@ OR USING SSH
 git@github.com:imAryan24/bookclub.git
 ```
 * Install node modules
+
+Uploading React App - Google Chrome 2023-06-30 15-01-24.mp4…
+
+
 ```
 npm install
 ```
@@ -41,3 +45,5 @@ This command will start the mongodb and the front end part.
 ```
 npm start
 ```
+
+
